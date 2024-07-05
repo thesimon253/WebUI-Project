@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+h1{
+    color: black;
+    font-family: "Heebo", sans-serif;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+h1::after{
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 3px;
+    background-color: #accf3a;
+    margin-top: 27px;
+    margin-left: 45px;
+}
+
+.photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.fphoto{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+
+
+
+.card {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cardProfile{
+    width: 310px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(167, 167, 167);
+    border-radius: 8px;
+}
+
+.cardName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+hr{
+    width: 55%;
+}
+.nameCard, .mailCard{
+    margin-top: 8px;
+}
+
+.remove_btn{
+ margin-top: 15px;
+ width: 100px;
+ border-radius: 5px;
+ border-color: rgb(255, 146, 146);
+ height: 35px;
+}
+
+.remove_btn a{
+    text-decoration: none;
+    color: rgb(180, 0, 0);
+    margin-bottom: 5px;
+    background: transparent;
+}
+
+.by{
+  width: 11px;
+  height: 13px;
+  background: transparent;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+.remove_btn:hover{
+    background: rgb(255, 185, 185);
+}
+
+.garb_can, .heart{
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+} 
+
+.like_btn{
+margin-right: 5px;
+border-radius: 5px;
+width: 30px;
+height: 30px;
+}
+
+.delete_btn{
+margin-left: 5px;
+border-radius: 5px;
+width: 30px;
+height: 30px;
+}
+
+.like_btn:hover{
+   background: #c1ff57;
+   margin-right: 10px;
+}
+
+.delete_btn:hover{
+    background: #ff8888;
+    margin-left: 10px;
+}
+
