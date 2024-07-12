@@ -1,16 +1,18 @@
 
 import "../scss/Overview.scss";
 import Card from "./Cards";
-
-const contacts = [{name: "Simon", email: "mail@com"}, {name: "Simon2", email: "mail2@com"},{name: "Simon3", email: "mail3@com"}]
-function FavoriteCards() {
+import { useState } from "react";
 
 
+function FavoriteCards({contacts}) {
+
+  
+  
   return (
   
   <>
-
-   {contacts.map(contact => <Card name={contact.name} mail={contact.email}/> )}
+   
+   {contacts.map(contact => <Card name={contact.name} lastname={contact.lastname}  mail={contact.email} key={contact.id}/> )}
 
   </>
   

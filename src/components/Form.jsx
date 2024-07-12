@@ -1,10 +1,14 @@
 import "../scss/Form.scss";
-import { useForm } from "react-hook-form"
-function Form() {
+/*import { useForm } from "react-hook-form"*/
+
+
+
+function Form({contactsHandler}) {
+
   return (
     <>
       <section className="hookform">
-        <form>
+        <form onSubmit={contactsHandler}>
           <input
             className="input-field"
             type="text"
@@ -13,7 +17,7 @@ function Form() {
           <input
             className="input-field"
             type="text"
-            placeholder=" First name "
+            placeholder=" Last name "
           />
           <input className="input-field" type="mail" placeholder=" Email " />
           <label className="checkbox-label" htmlFor="checkbox">

@@ -2,7 +2,7 @@ import photo from "../assets/profile.png";
 import "../scss/Overview.scss";
 import by from "../assets/by.png";
 
-function Card ({name, mail}){
+function Card ({name, lastname, mail}){
 
     return (
         <>
@@ -10,6 +10,7 @@ function Card ({name, mail}){
             <div className="cardName">
               <img className="fphoto" src={photo} alt="" />
               <h2 className="nameCard">{name}</h2>
+              <h2 className="nameCard">{lastname}</h2>
               <p className="mailCard"> {mail} </p>
               <hr />
               <button className="remove_btn">

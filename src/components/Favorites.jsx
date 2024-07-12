@@ -1,7 +1,7 @@
 import FavoriteCards from "./FavoriteCards";
 import "../scss/Overview.scss";
 
-function Favorites() {
+function Favorites({contacts}) {
   return (
     <>
       <div className="subtitle">
@@ -10,7 +10,7 @@ function Favorites() {
 
       <section className="card">
         <>
-          <FavoriteCards />
+          <FavoriteCards contacts ={contacts} />
         </>
       </section>
     </>
